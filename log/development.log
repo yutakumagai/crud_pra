@@ -581,3 +581,1820 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 18ms (Views: 7.1ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 172.23.0.1 at 2020-06-07 10:38:31 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 10:38:39 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (210.5ms)
+  Rendered users/new.html.erb within layouts/application (254.5ms)
+Completed 200 OK in 4538ms (Views: 4333.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 10:38:49 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 452ms (Views: 398.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 10:39:59 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 435ms (Views: 402.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 10:40:01 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 379ms (Views: 346.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 10:40:06 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 224ms (Views: 193.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 10:41:24 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 513ms (Views: 469.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 10:41:26 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/new.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 290ms (Views: 265.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 10:44:00 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9mENQ5tb10ydJPJd60U3mCgjeSwu5IgKV/SsPEVm4TmZAnUAQwHPXnN7NU6tSbD8GyuNoRww1CT568Aj9+4tPA==", "user"=>{"name"=>"user1", "age"=>"20", "note"=>"test"}, "commit"=>"Create User"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "user1"], ["age", 20], ["note", "test"], ["created_at", "2020-06-07 10:44:00.932425"], ["updated_at", "2020-06-07 10:44:00.932425"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 19ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 10:44:00 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 538ms (Views: 467.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 10:44:04 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 275ms (Views: 229.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:11:34 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:11:35 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:18:26 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb (22.5ms)
+Completed 200 OK in 106ms (Views: 98.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:18:42 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (81.4ms)
+Completed 200 OK in 2024ms (Views: 1946.7ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:18:51 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 345ms (Views: 284.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:18:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 233ms (Views: 192.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1/edit" for 172.23.0.1 at 2020-06-07 11:18:55 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1826.4ms)
+  Rendered users/edit.html.erb within layouts/application (1846.1ms)
+Completed 200 OK in 2131ms (Views: 2088.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:19:00 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 242ms (Views: 187.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:19:03 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 246ms (Views: 199.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:19:06 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 236ms (Views: 201.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:20:59 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 476ms (Views: 436.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:21:03 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 436ms (Views: 387.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:21:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 554ms (Views: 485.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 172.23.0.1 at 2020-06-07 11:21:06 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/edit.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 381ms (Views: 339.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:21:08 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 409ms (Views: 325.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:21:10 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 473ms (Views: 410.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:22:32 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 318ms (Views: 276.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:22:35 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 264ms (Views: 227.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:22:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 361ms (Views: 317.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1/edit" for 172.23.0.1 at 2020-06-07 11:22:37 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1010.9ms)
+  Rendered users/edit.html.erb within layouts/application (1054.6ms)
+Completed 200 OK in 1474ms (Views: 1430.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:22:42 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 361ms (Views: 305.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:22:43 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.5ms)
+  Rendered users/new.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 367ms (Views: 323.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:22:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 217ms (Views: 186.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:23:00 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 376ms (Views: 332.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:23:01 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 349ms (Views: 304.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:24:51 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (uninitialized constant UserController):
+  
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `block in load_missing_constant'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:9:in `without_bootsnap_cache'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:80:in `rescue in load_missing_constant'
+bootsnap (1.4.6) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:25:01 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:16
+  Rendered users/index.html.erb within layouts/application (35.2ms)
+Completed 200 OK in 373ms (Views: 326.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:26:44 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 609ms (Views: 483.4ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=aaaa&commit=Search" for 172.23.0.1 at 2020-06-07 11:26:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"aaaa"}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" ILIKE '%aaaa%'[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 438ms (Views: 383.2ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=user&commit=Search" for 172.23.0.1 at 2020-06-07 11:26:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"user"}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" ILIKE '%user%'[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 484ms (Views: 446.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=user&commit=Search" for 172.23.0.1 at 2020-06-07 11:27:12 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"user"}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" ILIKE '%user%'[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 509ms (Views: 468.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=user&commit=Search" for 172.23.0.1 at 2020-06-07 11:28:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"user"}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" ILIKE '%user%'[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 406ms (Views: 381.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?commit=Search&q%5Bname_cont%5D=user&q%5Bs%5D=name+asc&utf8=%E2%9C%93" for 172.23.0.1 at 2020-06-07 11:28:56 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"commit"=>"Search", "q"=>{"name_cont"=>"user", "s"=>"name asc"}, "utf8"=>"✓"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" ILIKE '%user%' ORDER BY "users"."name" ASC[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 357ms (Views: 319.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/?commit=Search&q%5Bname_cont%5D=user&q%5Bs%5D=name+desc&utf8=%E2%9C%93" for 172.23.0.1 at 2020-06-07 11:28:58 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"commit"=>"Search", "q"=>{"name_cont"=>"user", "s"=>"name desc"}, "utf8"=>"✓"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" ILIKE '%user%' ORDER BY "users"."name" DESC[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 459ms (Views: 408.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?commit=Search&q%5Bname_cont%5D=user&q%5Bs%5D=name+asc&utf8=%E2%9C%93" for 172.23.0.1 at 2020-06-07 11:30:26 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"commit"=>"Search", "q"=>{"name_cont"=>"user", "s"=>"name asc"}, "utf8"=>"✓"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" ILIKE '%user%' ORDER BY "users"."name" ASC[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 278ms (Views: 244.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:30:31 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 272ms (Views: 239.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:31:25 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.5ms)
+  Rendered users/new.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 320ms (Views: 286.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:31:42 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:24
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 364ms (Views: 317.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:32:27 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 347ms (Views: 319.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:32:55 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 362ms (Views: 326.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:33:25 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 623ms (Views: 569.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:33:48 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 672ms (Views: 574.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:33:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 342ms (Views: 293.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:34:43 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.1ms)
+  Rendered users/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 416ms (Views: 381.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:35:31 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 248ms (Views: 215.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:35:33 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 239ms (Views: 210.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/1/edit" for 172.23.0.1 at 2020-06-07 11:35:35 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/edit.html.erb within layouts/application (48.7ms)
+Completed 200 OK in 378ms (Views: 333.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:35:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 295ms (Views: 255.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:35:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 278ms (Views: 230.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:36:43 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 291ms (Views: 255.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:37:44 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 641ms (Views: 592.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:37:48 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 436ms (Views: 381.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:41:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 553ms (Views: 493.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/1/edit" for 172.23.0.1 at 2020-06-07 11:41:07 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.9ms)
+  Rendered users/edit.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 675ms (Views: 606.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:41:15 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 657ms (Views: 602.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 11:41:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 554ms (Views: 492.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:41:19 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 322ms (Views: 281.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:41:20 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.1ms)
+  Rendered users/new.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 359ms (Views: 318.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:42:03 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/users/new.html.erb:7: syntax error, unexpected tLABEL, expecting do or '{' or '('
+..._to '検索', users_path class: 'btn btn-default' );@output_...
+...                         ^~~~~~):
+  
+app/views/users/new.html.erb:7: syntax error, unexpected tLABEL, expecting do or '{' or '('
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:42:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 586ms (Views: 545.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:42:27 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 317ms (Views: 278.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:44:24 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (30.6ms)
+Completed 200 OK in 441ms (Views: 417.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:44:25 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"N3e+OVNW3JoG+WxhC0+bOr3M9ldSncjkdZ/oNv2aq4fIhKzWjuc5Dewo2FLejl+CfYQl2QP3zLUYZjirAjsmzA=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:74:in `user_params'
+app/controllers/users_controller.rb:29:in `create'
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:45:02 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N3e+OVNW3JoG+WxhC0+bOr3M9ldSncjkdZ/oNv2aq4fIhKzWjuc5Dewo2FLejl+CfYQl2QP3zLUYZjirAjsmzA==", "user"=>{"name"=>"", "age"=>"", "note"=>""}, "commit"=>"登録する"}
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[36mUser Create (10.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", ""], ["note", ""], ["created_at", "2020-06-07 11:45:02.565584"], ["updated_at", "2020-06-07 11:45:02.565584"]]
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:32
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 35ms (ActiveRecord: 16.2ms)
+
+
+Started GET "/users/2" for 172.23.0.1 at 2020-06-07 11:45:02 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 275ms (Views: 245.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2/edit" for 172.23.0.1 at 2020-06-07 11:45:07 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/edit.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 354ms (Views: 328.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:45:09 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 439ms (Views: 374.3ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/users/2" for 172.23.0.1 at 2020-06-07 11:45:12 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TcEK4iK7bE1jmARx6MXVm0CxHZqlCyLRR2L0QMaogzWyMhgN/wqJ2olJsEI9BBEjgPnOFPRhJoAqmyTdOQkOfg==", "id"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  [1m[35m (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:59
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:59
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:59
+Redirected to http://localhost:3000/users
+Completed 302 Found in 28ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:45:12 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 591ms (Views: 522.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:45:33 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 279ms (Views: 239.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:45:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"elhf5Ot7YpeFd1IUuWuqTbp4ZEGCkRb84HeLcI2zWYgVOyenMyF6hWsolQf/Zy0piXCQzLBFStJOaOdvPzuVjQ=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:74:in `user_params'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/rails/info" for 172.23.0.1 at 2020-06-07 11:46:49 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost:3000/rails/info/routes
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 172.23.0.1 at 2020-06-07 11:46:49 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::InfoController#routes as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [14 times] (3.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:47:31 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (79.9ms)
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    2: 
+    3: <%= render 'form', user: @user %>
+    4: 
+    5: <%= button_to '検索', user_path %>
+    6: <%= link_to '戻る', users_path %>
+  
+app/views/users/new.html.erb:5:in `_app_views_users_new_html_erb___2301879434419870748_70177122697780'
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:47:39 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 479ms (Views: 439.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:47:42 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Gj7LBLGYuvy/O86VQ1Go+6ipBp815UgK+kLX6CYUrXvlzdnrbClfa1XqeqaWkGxDaOHVEWSPTFuXuwd12bUgMA=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:74:in `user_params'
+app/controllers/users_controller.rb:29:in `create'
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:48:42 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Gj7LBLGYuvy/O86VQ1Go+6ipBp815UgK+kLX6CYUrXvlzdnrbClfa1XqeqaWkGxDaOHVEWSPTFuXuwd12bUgMA=="}
+Completed 400 Bad Request in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:72:in `user_params'
+app/controllers/users_controller.rb:27:in `create'
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:50:07 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"Gj7LBLGYuvy/O86VQ1Go+6ipBp815UgK+kLX6CYUrXvlzdnrbClfa1XqeqaWkGxDaOHVEWSPTFuXuwd12bUgMA=="}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-06-07 11:50:08.114209"], ["updated_at", "2020-06-07 11:50:08.114209"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:3000/users/3
+Completed 302 Found in 118ms (ActiveRecord: 49.7ms)
+
+
+Started GET "/users/3" for 172.23.0.1 at 2020-06-07 11:50:08 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 397ms (Views: 362.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:50:12 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 438ms (Views: 390.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/3" for 172.23.0.1 at 2020-06-07 11:50:16 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HjVdPBSFwZT1XtobQTFPabDncV0L1NGI298qLFFiAQPhxk/TyTQkAx+PbiiU8IvRcK+i01q+1dm2JvqxrsOMSA==", "id"=>"3"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:57
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:57
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:57
+Redirected to http://localhost:3000/users
+Completed 302 Found in 54ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:50:16 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 492ms (Views: 433.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 172.23.0.1 at 2020-06-07 11:51:26 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 462ms (Views: 384.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:51:30 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.1ms)
+  Rendered users/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 263ms (Views: 229.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:51:31 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"IAHK1w97dc8iqwA53ERhehuVi8iCllvziSuVP7E3CXBPYrKU1yFt3cz0xyqaSOYeKJ1/RbBCB90nNPkgA7/FdQ=="}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:72:in `user_params'
+app/controllers/users_controller.rb:27:in `create'
+Started POST "/users" for 172.23.0.1 at 2020-06-07 11:51:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"IAHK1w97dc8iqwA53ERhehuVi8iCllvziSuVP7E3CXBPYrKU1yFt3cz0xyqaSOYeKJ1/RbBCB90nNPkgA7/FdQ=="}
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2020-06-07 11:51:45.749124"], ["updated_at", "2020-06-07 11:51:45.749124"]]
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:30
+Redirected to http://localhost:3000/users/4
+Completed 302 Found in 76ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/users/4" for 172.23.0.1 at 2020-06-07 11:51:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 446ms (Views: 396.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:51:48 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 248ms (Views: 211.4ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/4" for 172.23.0.1 at 2020-06-07 11:51:51 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I3vYIlm9AIwFhjeo6i1ywTAuobm1JFFtHmVNOvXmL0bciMrNhAzlG+9Xg5s/7LZ58GZyN+ROVTxznJ2nCkeiDQ==", "id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:57
+  [1m[36mUser Destroy (1.1ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:57
+  [1m[35m (13.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:57
+Redirected to http://localhost:3000/users
+Completed 302 Found in 42ms (ActiveRecord: 15.2ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:51:51 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 422ms (Views: 383.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:51:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.7ms)
+  Rendered users/new.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 257ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:55:14 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 350ms (Views: 293.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 11:55:44 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.1ms)
+  Rendered users/new.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 520ms (Views: 443.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 11:55:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 352ms (Views: 311.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:02:42 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (36.3ms)
+  Rendered users/index.html.erb within layouts/application (86.8ms)
+Completed 500 Internal Server Error in 248ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No Ransack::Search object was provided to search_form_for!):
+    1: <%= search_form_for @search do |f| %>
+    2:   <div class="form-group">
+    3:     <%= f.label :name_cont, "名前" %>
+    4:     <%= f.text_field :name_cont, class: "form-control" %>
+  
+app/views/users/_search.html.erb:1:in `_app_views_users__search_html_erb___3129025253551172942_70177123984920'
+app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb___389714552726717730_70177123888600'
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:03:20 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (8.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (78.3ms)
+Completed 200 OK in 502ms (Views: 396.0ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=&q%5Bnote_cont%5D=a&commit=Search" for 172.23.0.1 at 2020-06-07 12:03:29 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"", "note_cont"=>"a"}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (1.7ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."note" ILIKE '%a%'[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 320ms (Views: 287.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=&q%5Bnote_cont%5D=test&commit=Search" for 172.23.0.1 at 2020-06-07 12:03:33 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"", "note_cont"=>"test"}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (2.1ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."note" ILIKE '%test%'[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (55.0ms)
+Completed 200 OK in 548ms (Views: 499.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=&q%5Bnote_cont%5D=&commit=Search" for 172.23.0.1 at 2020-06-07 12:05:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"", "note_cont"=>""}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (1.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (76.7ms)
+Completed 200 OK in 680ms (Views: 638.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=&q%5Bnote_cont%5D=&commit=Search" for 172.23.0.1 at 2020-06-07 12:06:37 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"", "note_cont"=>""}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (1.5ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (40.3ms)
+Completed 200 OK in 568ms (Views: 522.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=&q%5Bnote_cont%5D=&commit=Search" for 172.23.0.1 at 2020-06-07 12:12:34 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"", "note_cont"=>""}, "commit"=>"Search"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (7.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (63.6ms)
+Completed 200 OK in 617ms (Views: 491.6ms | ActiveRecord: 10.7ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 12:12:40 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 413ms (Views: 364.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:12:41 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4CAVldGw9FKKTaDfgsxbD4JnY7XkFFmTN6de9HM1/duPQ23WCersQGQSZ8zEwNxrsW+XONbABb2ZuDLrwb0x3g==", "user"=>{"name"=>"", "age"=>"", "note"=>""}, "commit"=>"登録する"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (11.0ms)
+  Rendered users/new.html.erb within layouts/application (61.1ms)
+Completed 200 OK in 434ms (Views: 424.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:12:57 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Al1LYJcTHPFN4NwQJxvM4AVPy1joMiByFYMbeSD/Jf/9rlmPSqL5ZqcxaCPy2ghYxQcY1rlYJCN4esvk316otA==", "user"=>{"name"=>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "age"=>"", "note"=>""}, "commit"=>"登録する"}
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.4ms)
+  Rendered users/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 540ms (Views: 525.2ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:13:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cya96XtQq9dxNxPuZykgxLXri5IDbtsFr52eR9uPfj301a8GpuFOQJvmp92y6OR8daNYHFIE31TCZE7aJC7zdg==", "user"=>{"name"=>"", "age"=>"", "note"=>"testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "commit"=>"登録する"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.1ms)
+  Rendered users/new.html.erb within layouts/application (92.4ms)
+Completed 200 OK in 533ms (Views: 521.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:14:32 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JP3ProEYsEhhfNqQwkAGqhGeIkgfNIR7l4ZrTtysUEDbDt1BXKlV34utbqMXgcIS0dbxxk5egCr6f7vTIw3dCw==", "user"=>{"name"=>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "age"=>"", "note"=>""}, "commit"=>"登録する"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (24.6ms)
+  Rendered users/new.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 652ms (Views: 565.1ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:14:41 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uk2B3W1V3CFwn0Bd+D/89S4AGKHDPJF+rOZM8uyud2JFvpMysOQ5tppO9G4t/jhN7kjLL5JWlS/BH5xvEw/6KQ==", "user"=>{"name"=>"aaaaaaaaa", "age"=>"", "note"=>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "commit"=>"登録する"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.8ms)
+  Rendered users/new.html.erb within layouts/application (73.1ms)
+Completed 200 OK in 402ms (Views: 390.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:14:59 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DWgNX9WYfzLY9gGGHlEIJ4rCszriZIEoAgI5pzaZEJDymx+wCCmapTIntbXLkMyfSopgtLMOhXlv++k6yTid2w==", "user"=>{"name"=>"熊谷", "age"=>"19", "note"=>"備考"}, "commit"=>"登録する"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.0ms)
+  Rendered users/new.html.erb within layouts/application (67.8ms)
+Completed 200 OK in 379ms (Views: 367.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:15:06 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (1.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (35.7ms)
+Completed 200 OK in 372ms (Views: 337.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 12:15:09 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/new.html.erb within layouts/application (37.9ms)
+Completed 200 OK in 551ms (Views: 500.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:15:16 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kIDFwyMx/AixSSjadLyiYCvlkNTmM/VZsVRBbRvtron/472A+2vkGl8W78kysCUEGO1kWdTnqXcfSy1yqWVijA==", "user"=>{"name"=>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "age"=>"", "note"=>""}, "commit"=>"登録する"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/new.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 453ms (Views: 438.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:15:31 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H6WAQKfwpjBYbVtHmyUM/hZ6ZntkeWRjXGLfO/lxom3gVpKvekFDp7K873RO5MhG1jK19TUTYDIxmw+mBtAvJg==", "user"=>{"name"=>"user2", "age"=>"11", "note"=>"備考"}, "commit"=>"登録する"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.5ms)
+  Rendered users/new.html.erb within layouts/application (102.4ms)
+Completed 200 OK in 448ms (Views: 435.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:17:18 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (10.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 598ms (Views: 485.8ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 12:17:24 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 252ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:17:37 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W3EGku4oaRaUdScNk5uouXihscN6A77tFiD5+xrlBGw0En7RNnJxBHoq4B7Vly/dS6lFTkjX4sO4P5XkqG3IaQ==", "user"=>{"name"=>"user2", "age"=>"23", "note"=>"備考"}, "commit"=>"登録する"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (8.7ms)
+  Rendered users/new.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 458ms (Views: 438.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:18:30 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cdw8/n2QlwEwVYH2X4I6SYrnVbgyMl4nkeJZSiDQjAL2Ly4RoCFyltqENcWKQ/7xSq+GNmNYWnb8G4nX33EBSQ==", "user"=>{"name"=>"user2", "age"=>"12", "note"=>"bikou"}, "commit"=>"登録する"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (10.2ms)
+  Rendered users/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 611ms (Views: 529.3ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:18:32 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (2.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (50.7ms)
+Completed 200 OK in 523ms (Views: 464.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:24:07 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (70.3ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (166.9ms)
+Completed 200 OK in 3070ms (Views: 2917.9ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 12:24:15 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3996.5ms)
+  Rendered users/new.html.erb within layouts/application (4033.2ms)
+Completed 200 OK in 4579ms (Views: 4481.1ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:24:30 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yg4yDmrd1TFteQzCNf4yGFyTVgsABVOalwBo8W2XDHOlbUpNsofNI4Mmy9Fz8rV8b5uihjLRD7Q5HwTu3x/Adg==", "user"=>{"name"=>"user2", "age"=>"10", "note"=>"備考"}, "commit"=>"登録する"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 565ms (Views: 512.6ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:26:33 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant ApplicationRecords):
+  
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:26:56 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (6.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (58.1ms)
+Completed 200 OK in 562ms (Views: 462.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:27:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (6.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 721ms (Views: 629.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/users/1/edit" for 172.23.0.1 at 2020-06-07 12:27:57 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.6ms)
+  Rendered users/edit.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 447ms (Views: 352.9ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:28:00 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (6.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (60.5ms)
+Completed 200 OK in 285ms (Views: 237.9ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users/1" for 172.23.0.1 at 2020-06-07 12:28:01 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:69
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 453ms (Views: 373.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:28:03 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (4.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (54.4ms)
+Completed 200 OK in 509ms (Views: 449.1ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 12:28:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (2.9ms)
+  Rendered users/new.html.erb within layouts/application (29.3ms)
+Completed 200 OK in 371ms (Views: 309.2ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:28:14 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rVy3Ed0hDJU9rDQkp+gCyS+42oitJENtrpBH8zgkbcvCP89SBXsUh9Pz8zfh5IWtHLAuBZ/wH0MAjyvsiqyhzg==", "user"=>{"name"=>"user2", "age"=>"19", "note"=>"bikuo"}, "commit"=>"登録する"}
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:32
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:32
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 643ms (Views: 585.8ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:30:14 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gP1NXODYTosz9zZJiYV3F/BLoSQJzRkckSUM1PLPMOx/Dl+zPWmrHNkmgnpcRLOvMANyqlinHU383NxJDW69pw==", "user"=>{"name"=>"", "age"=>"", "note"=>""}, "commit"=>"登録する"}
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 4.0ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007f166cc3cd30>):
+  
+app/controllers/users_controller.rb:31:in `create'
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:35:10 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gP1NXODYTosz9zZJiYV3F/BLoSQJzRkckSUM1PLPMOx/Dl+zPWmrHNkmgnpcRLOvMANyqlinHU383NxJDW69pw==", "user"=>{"name"=>"", "age"=>"", "note"=>""}, "commit"=>"登録する"}
+  [1m[35m (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (6.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:31
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:35:32 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (793.2ms)
+  Rendered users/new.html.erb within layouts/application (954.9ms)
+Completed 200 OK in 25932ms (Views: 12825.0ms | ActiveRecord: 18.0ms)
+
+
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (14.1ms)
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (389.2ms)
+Completed 200 OK in 3340ms (Views: 2524.9ms | ActiveRecord: 30.4ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 12:35:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (104.0ms)
+Completed 200 OK in 1459ms (Views: 1320.7ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:38:10 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uj/UhRBoUZ8Ms4nA7VRvehtZWoumbs/nelR+hbvlWys9XKzGyDJJjeLsTtOrWOgeKFGuBpS6k8nUSxKaCW2XLg==", "user"=>{"name"=>"user2", "age"=>"19", "note"=>"備考"}, "commit"=>"登録する"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:31
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (11.3ms)
+  Rendered users/new.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 1444ms (Views: 1125.5ms | ActiveRecord: 13.4ms)
+
+
+Started POST "/users" for 172.23.0.1 at 2020-06-07 12:40:01 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hs4c1wEz7Rtm5Ea0jK26Ekoj93n/P/MFW7knxmgwrp3hPQ443IIIjIw18odZbH6qimsk965V91Q2QPdbl5Ej1g==", "user"=>{"name"=>"user2", "age"=>"19", "note"=>"bikou"}, "commit"=>"登録する"}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Create (15.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "note", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "user2"], ["age", 19], ["note", "bikou"], ["created_at", "2020-06-07 12:40:02.649899"], ["updated_at", "2020-06-07 12:40:02.649899"]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (13.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:31
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 266ms (ActiveRecord: 58.6ms)
+
+
+Started GET "/users/5" for 172.23.0.1 at 2020-06-07 12:40:02 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (8.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:68
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1672ms (Views: 1250.0ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:40:10 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (11.1ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (94.5ms)
+Completed 200 OK in 883ms (Views: 695.6ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/users/new" for 172.23.0.1 at 2020-06-07 12:40:18 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (14.0ms)
+  Rendered users/new.html.erb within layouts/application (162.4ms)
+Completed 200 OK in 1616ms (Views: 1505.2ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/users" for 172.23.0.1 at 2020-06-07 12:40:32 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (13.6ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (112.9ms)
+Completed 200 OK in 1605ms (Views: 1312.1ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=&q%5Bnote_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.23.0.1 at 2020-06-07 12:40:41 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"", "note_cont"=>""}, "commit"=>"検索"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (40.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (361.9ms)
+Completed 200 OK in 2439ms (Views: 2056.4ms | ActiveRecord: 50.7ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=20&q%5Bnote_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.23.0.1 at 2020-06-07 12:40:48 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"20", "note_cont"=>""}, "commit"=>"検索"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (16.3ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."age" = 20[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (213.7ms)
+Completed 200 OK in 2340ms (Views: 1766.5ms | ActiveRecord: 23.4ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=2&q%5Bnote_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.23.0.1 at 2020-06-07 12:42:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"2", "note_cont"=>""}, "commit"=>"検索"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (5.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."age" = 2[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (81.7ms)
+Completed 200 OK in 1822ms (Views: 863.5ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=2&q%5Bnote_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.23.0.1 at 2020-06-07 12:45:04 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (13.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"2", "note_cont"=>""}, "commit"=>"検索"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (47.7ms)
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."age" = 2[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (106.6ms)
+Completed 200 OK in 3617ms (Views: 2760.8ms | ActiveRecord: 27.1ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=2&q%5Bnote_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.23.0.1 at 2020-06-07 12:46:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"2", "note_cont"=>""}, "commit"=>"検索"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (91.9ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."age" = 2[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (268.7ms)
+Completed 200 OK in 7000ms (Views: 5179.7ms | ActiveRecord: 24.3ms)
+
+
+Started GET "/users?utf8=%E2%9C%93&q%5Bname_cont%5D=&q%5Bage_eq%5D=2&q%5Bnote_cont%5D=&commit=%E6%A4%9C%E7%B4%A2" for 172.23.0.1 at 2020-06-07 12:50:32 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"name_cont"=>"", "age_eq"=>"2", "note_cont"=>""}, "commit"=>"検索"}
+DEPRECATION WARNING: #search is deprecated and will be removed in 2.3, please use #ransack instead (called from index at /app/app/controllers/users_controller.rb:7)
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/_search.html.erb (21.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."age" = 2[0m
+  ↳ app/views/users/index.html.erb:19
+  Rendered users/index.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 626694ms (Views: 901.4ms | ActiveRecord: 13.2ms)
+
+
